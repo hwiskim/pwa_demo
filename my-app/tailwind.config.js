@@ -5,22 +5,38 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./public/index.html",
   ],
+  darkMode: "class",
   theme: {
     extend: {
-      // 2. 스티치 디자인에서 가져온 커스텀 설정
       colors: {
-        primary: "#4F46E5",
-        "background-light": "#ffffff",
+        primary: "#22c55e", // CloszIT Green
+        "brand-blue": "#3B82F6", // Step 2 Blue
+        "brand-purple": "#4F46E5", // Main Screen Purple
+        "brand-purple-dark": "#4338CA",
+        "secondary": "#10B981",
+        "background-light": "#f9fafb",
         "background-dark": "#111827",
-        "surface-light": "#f3f4f6",
+        "surface-light": "#ffffff",
         "surface-dark": "#1f2937",
+        "border-light": "#e5e7eb",
+        "border-dark": "#374151",
+        "text-light": "#1f2937",
+        "text-dark": "#f3f4f6",
+        "text-muted-light": "#6b7280",
+        "text-muted-dark": "#9ca3af",
+        "input-bg-light": "#F3F4F6",
+        "input-bg-dark": "#374151",
+        "divider-light": "#E5E7EB",
+        "divider-dark": "#374151",
       },
       fontFamily: {
-        display: ['Poppins', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        display: ["'Noto Sans KR'", "sans-serif"],
+        sans: ["'Noto Sans KR'", "sans-serif"],
       },
       borderRadius: {
         DEFAULT: "0.75rem",
+        'xl': '1rem',
+        '2xl': '1.5rem',
       },
     },
   },
